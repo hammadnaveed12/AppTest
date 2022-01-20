@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="53dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/app_icon_round"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="104dp"
+        android:text="WELCOME \n Hammad"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/image_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Select Date"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/text_id"
+        app:layout_constraintStart_toStartOf="@+id/image_id"
+        app:layout_constraintTop_toBottomOf="@+id/image_id" />
+
+<!--    <VideoView-->
+<!--        android:id="@+id/videoview"-->
+<!--        android:layout_width="311dp"-->
+<!--        android:layout_height="201dp"-->
+<!--        tools:layout_editor_absoluteX="50dp"-->
+<!--        tools:layout_editor_absoluteY="59dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/teal_200"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="138dp" />
+
+</android.support.constraint.ConstraintLayout>
